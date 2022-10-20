@@ -14,7 +14,7 @@ public class Barang extends  AbstractDate implements Serializable {
     //GenerationType.AUTO : nextvall all tabel sequense
     // GenerationType.IDENTITY : nextvall per tabel sequense
     @Id
-    @Column(name="id")
+    @Column(name="id_barang")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

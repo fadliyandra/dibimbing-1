@@ -14,16 +14,16 @@ public class Transaksi extends AbstractDate implements Serializable {
     //GenerationType.AUTO : nextvall all tabel sequense
     // GenerationType.IDENTITY : nextvall per tabel sequense
     @Id
-    @Column(name = "id")
+    @Column(name = "id_transaksi")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id_transaksi;
 
     @ManyToOne
-    @JoinColumn(name = "barang_id")
+    @JoinColumn(name = "id_barang")
     Barang barang;
 
     @ManyToOne
-    @JoinColumn(name = "pembeli_id")
+    @JoinColumn(name = "id_pembeli")
     Pembeli pembeli;
 
     private Double harga;
